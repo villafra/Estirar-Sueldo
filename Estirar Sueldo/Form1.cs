@@ -15,6 +15,13 @@ namespace Estirar_Sueldo
         public Form1()
         {
             InitializeComponent();
+            EstirarSueldo estirar = new EstirarSueldo();
+            dgvDeudas.DataSource = estirar.CargarDeudas();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }
